@@ -6,7 +6,7 @@
 /*   By: ldevaud <ldevaud@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 09:33:09 by ldevaud           #+#    #+#             */
-/*   Updated: 2023/02/01 10:44:07 by ldevaud          ###   ########.fr       */
+/*   Updated: 2023/02/23 10:38:38 by ldevaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,24 +79,24 @@ void			ft_lstclear(t_list **lst, void (*del)(void*));
 void			ft_lstiter(t_list *lst, void (*f)(void*));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *));
 /* ***** printf ***** */
-int		ft_printf(const char *str, ...);
-size_t	ft_type_argument(va_list arg, const char format);
-size_t	ft_putchar(char c);
-size_t	ft_putstr_printf(char *str);
-size_t	ft_putnbr_printf(int nbr);
-size_t	ft_print_ptr(unsigned long long int nb);
-void	ft_putnbr_unsigned_int(unsigned int nbr);
-size_t	ft_putnbr_u(unsigned int nbr);
-size_t	ft_lennbr(long nbr);
-void	ft_putnbr(int nbr);
-size_t	ft_print_x(unsigned int n, char c);
-size_t	ft_hexa_len(unsigned long long int n);
-void	ft_print_lower(unsigned long long int n);
-void	ft_hexa_capital(unsigned long long int n);
+int				ft_printf(const char *str, ...);
+size_t			ft_type_argument(va_list arg, const char format);
+size_t			ft_putchar(char c);
+size_t			ft_putstr_printf(char *str);
+size_t			ft_putnbr_printf(int nbr);
+size_t			ft_print_ptr(unsigned long long int nb);
+void			ft_putnbr_unsigned_int(unsigned int nbr);
+size_t			ft_putnbr_u(unsigned int nbr);
+size_t			ft_lennbr(long nbr);
+void			ft_putnbr(int nbr);
+size_t			ft_print_x(unsigned int n, char c);
+size_t			ft_hexa_len(unsigned long long int n);
+void			ft_print_lower(unsigned long long int n);
+void			ft_hexa_capital(unsigned long long int n);
 /* ***** get_next_line ***** */
-char	*get_next_line(int fd);
-char	*gnl_strchr(char *str, int c);
-char	*gnl_strjoin(char *s1, char *s2);
-size_t	gnl_strlen(char *str);
+char			*get_next_line(int fd);
+char			*gnl_strchr(char *str, int c);
+char			*gnl_strjoin(char *s1, char *s2);
+size_t			gnl_strlen(char *str);
 
 #endif
